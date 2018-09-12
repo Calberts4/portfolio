@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>PORTFOLIO</b></h4>
+
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Home</a>
+    <a href="art.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Works</a>
+    <!-- this script got from www.javascriptfreecode.com-Coded by: Krishna Eydat -->
+
+    <html>
+
+    <head>
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    </head>
+
+    <body>
+
+    <center>
+    <script LANGUAGE="JavaScript">
+
+    <!-- Begin
+    monthnames = new Array(
+    "January",
+    "Februrary",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "Decemeber");
+    var linkcount=0;
+    function addlink(month, day, href) {
+    var entry = new Array(3);
+    entry[0] = month;
+    entry[1] = day;
+    entry[2] = href;
+    this[linkcount++] = entry;
+    }
+    Array.prototype.addlink = addlink;
+    linkdays = new Array();
+    monthdays = new Array(12);
+    monthdays[0]=31;
+    monthdays[1]=28;
+    monthdays[2]=31;
+    monthdays[3]=30;
+    monthdays[4]=31;
+    monthdays[5]=30;
+    monthdays[6]=31;
+    monthdays[7]=31;
+    monthdays[8]=30;
+    monthdays[9]=31;
+    monthdays[10]=30;
+    monthdays[11]=31;
+    todayDate=new Date();
+    thisday=todayDate.getDay();
+    thismonth=todayDate.getMonth();
+    thisdate=todayDate.getDate();
+    thisyear=todayDate.getYear();
+    thisyear = thisyear % 100;
+    thisyear = ((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+    if (((thisyear % 4 == 0)
+    && !(thisyear % 100 == 0))
+    ||(thisyear % 400 == 0)) monthdays[1]++;
+    startspaces=thisdate;
+    while (startspaces > 7) startspaces-=7;
+    startspaces = thisday - startspaces + 1;
+    if (startspaces < 0) startspaces+=7;
+    document.write("<table border=2 bgcolor=white ");
+    document.write("bordercolor=black><font color=black>");
+    document.write("<tr><td colspan=7><center><strong>"
+    + monthnames[thismonth] + " " + thisyear
+    + "</strong></center></font></td></tr>");
+    document.write("<tr>");
+    document.write("<td align=center>Su</td>");
+    document.write("<td align=center>M</td>");
+    document.write("<td align=center>Tu</td>");
+    document.write("<td align=center>W</td>");
+    document.write("<td align=center>Th</td>");
+    document.write("<td align=center>F</td>");
+    document.write("<td align=center>Sa</td>");
+    document.write("</tr>");
+    document.write("<tr>");
+    for (s=0;s<startspaces;s++) {
+    document.write("<td> </td>");
+    }
+    count=1;
+    while (count <= monthdays[thismonth]) {
+    for (b = startspaces;b<7;b++) {
+    linktrue=false;
+    document.write("<td>");
+    for (c=0;c<linkdays.length;c++) {
+    if (linkdays[c] != null) {
+    if ((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count)) {
+    document.write("<a href=\"" + linkdays[c][2] + "\">");
+    linktrue=true;
+          }
+       }
+    }
+    if (count==thisdate) {
+    document.write("<font color='FF0000'><strong>");
+    }
+    if (count <= monthdays[thismonth]) {
+    document.write(count);
+    }
+    else {
+    document.write(" ");
+    }
+    if (count==thisdate) {
+    document.write("</strong></font>");
+    }
+    if (linktrue)
+    document.write("</a>");
+    document.write("</td>");
+    count++;
+    }
+    document.write("</tr>");
+    document.write("<tr>");
+    startspaces=0;
+    }
+    document.write("</table></p>");
+    // End -->
+    </script>
+    </center>
+
+    </body>
+
+    </html>
+
+    <font face="Tahoma"><a target="_blank" href="http://www.javascriptfreecode.com/"><span style="font-size: 4pt; text-decoration: none">JavaScript Free Code</span></a></font>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+  <!-- Header -->
+  <header id="portfolio">
+    <a <img src="images/cecilee.JPG" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Cecilee Alberts</b></h1>
+    </div>
+  </header>
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="images/cecilee.JPG" alt="Me" style="width:50%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>My name is Cecilee Alberts, and I have had a passion for art and design since I was very young. I have a background in traditional art (oil and acrylic painting, figure drawing etc). once I went into high school I began to learn more graphic arts and graphic design.  I learned Adobe photoshop and illustrator. I have continued learning more and more in graphic design along with learning a bit of html coding.</p>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <div class="w3-row-padding w3-center w3-padding-10" style="margin:0 -16px">
+      <div class="w3-second w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>albertscecilee@gmail.com</p>
+      </div>
+      <div class="w3-second w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>California, US</p>
+      </div>
+    </div>
+    <form id="form2" name="form2" class="" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+          action="https://calberts4.wufoo.com/forms/mzydoae0enbft7/#public">
+
+    <header id="header" class="info">
+    <h2 class="0">Contact Me</h2>
+    <div class="0"></div>
+    </header>
+    <label class="" id="title1" for="Field1">
+    Full Name
+    *
+    </label>
+    <div>
+    <input id="Field1" name="Field1" type="text" class="" value="" maxlength="255" tabindex="1" onkeyup="" required placeholder="e.g. John Smith" />
+    </div>
+    <label class="" id="title2" for="Field2">
+    Email
+    *
+    </label>
+    <div>
+    <input id="Field2" name="Field2" type="text" class="" value="" maxlength="255" tabindex="2" onkeyup=""       required placeholder="" />
+    </div>
+    <label class="" id="title4" for="Field4">
+    Additional Comments
+    </label>
+
+    <div>
+    <textarea id="Field4"
+    name="Field4"
+    class="field textarea medium"
+    spellcheck="true"
+    rows="10" cols="50"
+
+    tabindex="3"
+    onkeyup=""
+    placeholder="Optional"
+           ></textarea>
+
+    </div>
+    <div>
+
+                        <input id="saveForm" name="saveForm" class=""
+        type="submit" value="Submit"
+     />
+    <a href="https://master.wufoo.com/forms/m7p0x3/def/field1=calberts4.wufoo.com/forms/contact-me/"
+    target="_blank"
+    style="font-size:25% !important;visibility:visible !important;display:inline !important;
+    background:none !important;border:none !important;color:blue !important;
+    text-indent:0 !important;text-decoration:underline !important;position:static !important;
+    margin:0 !important;padding:0 !important;overflow:none !important
+    width:auto !important;height:auto !important;">Report Abuse</a>
+    </div>
+
+    <input type="hidden" id="idstamp" name="idstamp" value="ulTip/Mk3/8yUzjsWqxmBrkLUh0vHtAZ4lnDnHWR54Y=" />
+    </form>
+
+
+    </div><!--container-->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Welcome to my portfolio website!</h3>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
